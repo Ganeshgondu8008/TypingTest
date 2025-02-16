@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="login-screen">
+        <h1>Welcome to Typing Speed Test</h1>
+        <input type="text" id="login-name" placeholder="Enter your name">
+        <button id="start-test">Start</button>
+    </div>
+
+    <div id="test-screen" style="display: none;">
+        <h1>Typing Speed Test</h1>
+        <h2 id="user-name"></h2>
+
+        <div id="mode-selection">
+            <button class="mode-btn" data-mode="one-minute">1-Min Test</button>
+            <button class="mode-btn" data-mode="paragraph">Paragraph Test</button>
+            <button class="mode-btn" data-mode="words-50">50 Words</button>
+            <button class="mode-btn" data-mode="numbers">Numbers Test</button>
+            <button class="mode-btn" data-mode="symbols">Symbols Test</button>
+        </div>
+
+        <p id="text-to-type"></p>
+        <textarea id="typing-area" placeholder="Start typing here..."></textarea>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p id="feedback"></p>
+
+        <button id="restart">Restart</button>
+        <button id="toggle-dark-mode">Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
